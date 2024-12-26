@@ -1,0 +1,112 @@
+.new-exemplaire-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    overflow: auto; /* Enable scrolling for the modal itself if it gets too big for the viewport */
+}
+
+.new-exemplaire-modal-content {
+    background-color: #212529;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%; /* Increased width for better use of space */
+    max-width: 600px; /* Set a maximum width */
+    max-height: 90vh; /* Set a maximum height relative to the viewport height */
+    overflow: hidden; /* Hide overflow on the content itself */
+    position: relative;
+    display: flex;       /* Enable flexbox layout */
+    flex-direction: column;
+}
+
+.new-exemplaire-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+.new-exemplaire-modal-body {
+    overflow-y: auto; /* Enable scrolling for the modal body */
+    max-height: calc(90vh - 120px); /* Adjust based on header and footer height */
+    padding-right: 10px; /* Add some padding to prevent content from touching the scrollbar */
+}
+
+.new-exemplaire-modal-body label{
+    display: block;
+    margin-bottom: 5px;
+}
+.new-exemplaire-modal-body input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: #eee;
+}
+
+.new-exemplaire-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px; /* Add some top padding */
+    border-top: 1px solid #555;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    color: red;
+    transition: color 0.2s;
+}
+
+.close-button:hover {
+    color: darkred;
+}
+
+.save ,
+.cancel
+{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Increased padding */
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.save {
+    background-color: #198754 !important;
+}
+.save :hover{
+    background-color: darkgreen !important;
+}
+
+.cancel {
+    background-color: red !important;
+}
+
+.cancel :hover
+{
+    background-color: darkred !important;
+
+}

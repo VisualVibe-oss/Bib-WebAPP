@@ -1,0 +1,42 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.todo-list {
+  width: 100%; /* Adjust the width as needed */
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #212529;
+  color: white;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  margin-bottom: 10px;
+}
+
+.todo-button {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  color: white;
+  background-color: #212529;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.todo-button:hover {
+  background-color: #198754;
+}
+
+.todo-button:active {
+  background-color: #198754;
+}

@@ -1,0 +1,51 @@
+.input-group > input {
+  flex-grow: 1;
+  margin: 0 4px;
+  width: 160px;
+  height: 40px;
+  margin-left: 10px;
+  background-color: #444;
+  border: 1px solid #ccc;
+  color: #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Increased border-radius for rounded corners */
+}
+
+.input-group > input::placeholder {
+  color: white; /* Change placeholder text color */
+}
+
+.input-group :hover {
+  background-color: #212529;
+}
+
+/* Add a border/frame around the navbar */
+/* Make the header span the full width of the page */
+.navbar {
+  width: 100%; /* Full width */
+  margin-bottom: 14px; /* Remove any margin */
+  border-radius: 3px; /* Remove border radius for a squared look */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.search-input {
+  width: 24%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: #444;
+  color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+.search-input:hover {
+  background-color: #198754;
+}
