@@ -1,0 +1,29 @@
+SELECT * FROM library.bibliothecaire;
+SELECT * FROM library.document;
+SELECT * FROM library.exemplaire;
+SELECT * FROM library.livre;
+SELECT * FROM library.periodique;
+SELECT * FROM library.utilisateur;
+
+select count(numeroDordreExemplaire) from exemplaire;
+select count(idDocument) from document;
+SELECT count(ID_bib) FROM bibliothecaire;
+SELECT count(ISBN) FROM livre;
+SELECT count(ISSN) FROM periodique;
+SELECT count(id_Utilisateur) FROM utilisateur;
+
+select * from exemplaire order by dateDebut desc;
+
+select count(numeroDordreExemplaire) from exemplaire where etatExemplaire = "bon";
+select count(numeroDordreExemplaire) from exemplaire where etatExemplaire = "Très bon";
+select count(numeroDordreExemplaire) from exemplaire where etatExemplaire = "Usagé";
+select count(numeroDordreExemplaire) from exemplaire where etatExemplaire = "Endommagé";
+select count(numeroDordreExemplaire) from exemplaire where etatExemplaire = "neuf";
+
+select count(numeroDordreExemplaire) from exemplaire where statusExemplaire = "En rayon";
+select count(numeroDordreExemplaire) from exemplaire where statusExemplaire = "En prêt";
+select count(numeroDordreExemplaire) from exemplaire where statusExemplaire = "En retard";
+select count(numeroDordreExemplaire) from exemplaire where statusExemplaire = "En travaux";
+select count(numeroDordreExemplaire) from exemplaire where statusExemplaire = "En reserve";
+
+select sum(nombreExemplaire) from document; //nombre totale des exemplaire

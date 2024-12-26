@@ -1,0 +1,82 @@
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+
+.add-content {
+    background-color: #212529; /* Changed from #333 to a darker blue */    
+    color: #eee;
+    padding: 10px;
+    border: 1px solid #555;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative; 
+}
+
+.close {
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.close :hover{
+    background-color: darkred;
+}
+.add label {
+    display: block;
+    margin-bottom: -2px;
+    color: #ddd;
+}
+
+.add input[type="text"],
+.add input[type="email"],
+.add select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: #eee;
+}
+.app {
+    background-color: #111111;
+    color: white;
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.open-modal-button {
+    background-color: #198754; /* Blue */
+    color: white;
+    padding: 3px 280px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 45px; /* Add a transition for hover effect */
+}
+
+.open-modal-button:hover {
+    background-color: darkgreen; /* Darker blue on hover */
+}
+

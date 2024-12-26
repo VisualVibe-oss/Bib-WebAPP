@@ -1,0 +1,152 @@
+/* Modal.css */
+/* Modal.css */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* This allows the *modal* to scroll if it exceeds the viewport */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #212529;
+    color: #eee;
+    padding: 20px;
+    border: 1px solid #555;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+     overflow-y: auto; /* This allows the *content* to scroll */
+    max-height: 80vh; /* Set a maximum height for the content */
+}
+
+/* ... (rest of your CSS) */
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Added margin */
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 20px;
+    line-height: 1;
+    color: red;
+    transition: color 0.2s;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Added margin */
+}
+
+.update-button,
+.addex,
+.save-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Increased padding */
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}
+
+.save-button {
+    background-color: #198754 !important;
+}
+
+.save-button:hover {
+    background-color: darkgreen !important;
+}
+
+.addex{
+    background-color: #198754;
+}
+.addex:hover{
+    background-color: darkgreen;
+}
+.modal-body label {
+    display: block;
+    margin-bottom: 5px; /* Increased margin */
+    color: #ddd;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px; /* Increased margin */
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: #eee;
+}
+
+input:disabled {
+    background-color: #555;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Styles for Exemplaires */
+/* ... (Existing styles) */
+
+.modal-body .exemplaires-container {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+.modal-body .exemplaires-container h2{
+    margin-top: 0;
+}
+
+.modal-body .exemplaire-item {
+    background-color: #444; /* Match input background */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #555; /* Match input border */
+    border-radius: 4px; /* Match input border-radius */
+    color: #eee;
+}
+
+.modal-body .exemplaire-item label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #ddd; /* Match label color */
+}
+.modal-body .exemplaire-item span {
+    display: inline-block;
+}

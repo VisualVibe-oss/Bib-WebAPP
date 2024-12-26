@@ -20,7 +20,8 @@ CREATE TABLE Utilisateur (
     prenom VARCHAR(255) NOT NULL,
     emailClient VARCHAR(255) NOT NULL UNIQUE,
     adresseClient TEXT NOT NULL,
-    etatClient ENUM('Actif', 'Inactif') NOT NULL,
+    etatClient ENUM('Bloque', 'pasBloque') NOT NULL,
+    categorieClient ENUM ('Occasionnel','Abonnés','Abonné privilégié') NOT NULL,
     Id_bib INT NOT NULL,
     FOREIGN KEY (Id_bib) REFERENCES Bibliothecaire(Id_bib)
 );

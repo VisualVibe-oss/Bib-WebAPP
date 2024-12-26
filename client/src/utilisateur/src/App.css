@@ -1,0 +1,27 @@
+body{
+    background-color: #111111;
+}
+
+/* In your App.css or a separate stylesheet */
+
+.flex-container {
+    display: flex; 
+  }
+  
+  .graph-container {
+    flex: 1; /* Make the graph container take up half the space */
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 47%;
+    float: right;
+  }
+  
+  .table-container {
+    flex: 1; /* Make the table container take up half the space */
+    margin-top: 40px;
+    width: 50%;
+    float: left;
+  }
+
+
+  

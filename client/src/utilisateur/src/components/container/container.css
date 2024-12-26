@@ -1,0 +1,6 @@
+.container {
+    max-width: 960px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; 
+    background-color: white;
+  }

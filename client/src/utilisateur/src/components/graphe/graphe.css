@@ -1,0 +1,12 @@
+.graph-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 30px;
+  margin-right: 10px;/* Remove default margin */
+  background-color: #212529; 
+  margin-top: 100px;
+}
+
+
+  
